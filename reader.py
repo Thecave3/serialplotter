@@ -28,10 +28,6 @@ import numpy as np # real-time
 import matplotlib.pyplot as plt # sudo apt-get install python-matplotlib
 import os
 
-#NB il programma NON funziona senza i moduli serial, numpy e plt
-#Installazione di tali moduli per windows http://docs.python.it/html/inst/
-
-
 
 print( "Provo ad aprire porta Arduino...")
 #apre la porta seriale ad un baudrate 9600
