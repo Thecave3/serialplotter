@@ -10,6 +10,7 @@ No,you should edit by yourself.
 How to use it
 
 Dependencies
+
 This program will NOT work if you don't have serial, numpy e plt modules
 Install them with your favourite repository tools:
 If you use a Debian-Based distribution:
