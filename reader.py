@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import sys #ctrl-c handling and clear handling
-import serial # sudo apt-get install python-serial
+import serial 
 import numpy as np # real-time
-import matplotlib.pyplot as plt # sudo apt-get install python-matplotlib
+import matplotlib.pyplot as plt #
 import os
-
 
 print( "Provo ad aprire porta Arduino...")
 #apre la porta seriale ad un baudrate 9600
