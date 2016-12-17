@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys #ctrl-c handling and clear handling
-import serial 
+import serial
 import numpy as np # real-time
 import matplotlib.pyplot as plt #
 import os
@@ -18,10 +18,10 @@ try:
     bytesize=serial.SEVENBITS
     )
 except serial.serialutil.SerialException:
-    print( "Errore, porta sbagliata?")
+    print( "Errore, porta sbagliata? Dispositivo non collegato?")
     print("Prima di eseguire lo script settare correttamente la porta, la porta di default è /dev/ttyACM0")
     print( "Termino applicazione")
-    sys.exit()
+    sys.exit(-1)
 
 #crea file di log dove salva i dati raccolti dall'arduino
 logger = open("logger.csv",'w')
