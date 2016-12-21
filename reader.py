@@ -3,7 +3,6 @@
 
 import sys #ctrl-c handling and clear handling
 import serial
-import numpy as np # real-time
 import matplotlib.pyplot as plt #
 import os
 
@@ -31,13 +30,13 @@ plt.ion()
 #the big loop
 while 1:
     try:
-        data=ser.readline()
-        print( "Pressione ambientale: "+ data[0]+"Umidità %: "+ data[1]+" Temperatura °C: "+ data[2] +" Pressione interna: "+data[3]+ "Tempo: "+data[4])
         os.system('cls' if os.name == 'nt' else 'clear')
+        data=ser.readline()
         logger.write(data)
         data = data.strip("\n").strip("\r")
         data = data.split(';')
-        y = data[0]
+        print( "Pressione ambientale: "+ data[0]+"Umidità %: "+ data[1]+" Temperatura °C: "+ data[2] +" Pressione interna: "+data[3]+ "Tempo: "+data[4])
+        y = data[3]
         x = data[4]
         plt.scatter(x, y)
         plt.pause(0.05)
