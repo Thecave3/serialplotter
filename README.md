@@ -22,16 +22,16 @@ Hack’n’play for your personal use.
   This program will NOT compile if you don't have at least:
     - JAVA SE 7
     - JFreeChart  v 1.0.19 that can be obtained
-   -  JCommon v 1.0.23
+    - JCommon v 1.0.23
 
 NOTE: [Here](http://www.jfree.org/jfreechart/download/jfreechart-1.0.0-install.pdf) is a simple pdf guide to install and use JFreeChart and JCommon.
 
-PYTHON version
-This program will NOT work if you don't have serial and plt modules.
-In Linux you can install them with your favourite repository tool:
+- PYTHON version:
+  This program will NOT work if you don't have serial and plt modules.
+  In Linux you can install them with your favourite repository tool.
 
-If you use a Debian-Based distribution:
-  sudo apt-get install python-serial
-  sudo apt-get install python-matplotlib
+ If you use a Debian-Based distribution:
+    sudo apt-get install python-serial
+    sudo apt-get install python-matplotlib
 
 Windows Users should install Anaconda Enviroment because it contains all the libraries used.
