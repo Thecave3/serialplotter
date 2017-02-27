@@ -4,7 +4,7 @@ What is?
 
 A simple serial reader and plotter with a logging util to use your Arduino controller's output directly in your code.
 
-This script was committed for scientifical purpose for the Physics Department of La Sapienza University, Rome. 
+This script was committed for scientifical purpose for the Physics Department of La Sapienza University, Rome.
 They need an enviroment controller for their clean room10000 so I used an Arduino to handle back-end [EnviromentController](https://github.com/Thecave3/EnviromentControllerArduino) here the values detected by sensors and then this script to handle the front-end.
 
 Is a ready-to-implement code?
@@ -13,20 +13,26 @@ No,you should shape to what you want to do by yourself.
 I finally decided to rewrite the whole software in java to offer a better GUI.
 
 
-How to use it
+How to use it:
 
 Hack’n’play for your personal use.
 
 
 Dependencies
-JAVA version
+JAVA version:
+This program will NOT compile if you don't have at least:
 JAVA SE 7
+JFreeChart  v 1.0.19 that can be obtained
+JCommon v 1.0.23
+
+For this last two libraries [here](http://www.jfree.org/jfreechart/download/jfreechart-1.0.0-install.pdf) is a simple pdf guide to install and use them.
 
 PYTHON version
 This program will NOT work if you don't have serial and plt modules.
-Install them with your favourite repository tools:
+In Linux you can install them with your favourite repository tool:
+
 If you use a Debian-Based distribution:
   sudo apt-get install python-serial
   sudo apt-get install python-matplotlib
 
-Windows Users should download Linux or install Anaconda Enviroment because it contains the most of the libraries used
+Windows Users should install Anaconda Enviroment because it contains all the libraries used.
