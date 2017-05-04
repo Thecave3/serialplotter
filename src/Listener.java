@@ -1,6 +1,8 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.WindowConstants;
+
 
 public class Listener implements ActionListener {
 	
@@ -23,7 +25,8 @@ public class Listener implements ActionListener {
 			this.frame.serial.setEditable(false);
 			this.frame.start.setEnabled(false);
 			this.frame.clean.setEnabled(true);
-			read= new Lettore();
+			this.frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+			read= new Lettore(this.frame);
 			t = new Thread(read);
 			t.start();
 			
@@ -40,12 +43,13 @@ public class Listener implements ActionListener {
 			}
 			this.frame.start.setEnabled(true);
 			this.frame.serial.setEditable(true);
+			this.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			
 			
 		}
 		
 		if(e.getActionCommand().equals(CLEAN)){
-			//CLEANING
+			// deve pulire i dati sul plotter
 		}
 
 	}

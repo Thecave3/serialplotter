@@ -8,8 +8,14 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-@SuppressWarnings("serial")
+
 public class GUI extends JFrame {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5797434456475175549L;
+
 	private final static String titolo = "Serial Plotter";
 	
 	private final static String START = "start";
@@ -54,12 +60,7 @@ public class GUI extends JFrame {
 		this.north.add(serial);
 		
 		this.centre.setLayout(new BorderLayout());
-		this.centre.add(insidecenter, BorderLayout.CENTER);
 		this.centre.add(southcenter, BorderLayout.SOUTH);
-		
-		this.insidecenter.setLayout(new BorderLayout());
-
-		this.insidecenter.add(grafico,BorderLayout.CENTER);
 		
 		this.southcenter.setLayout(new FlowLayout());
 		this.southcenter.add(data);
