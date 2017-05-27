@@ -7,10 +7,9 @@ A simple serial reader and plotter with a logging util to use your Arduino contr
 This script was committed for scientifical purpose for the Physics Department of La Sapienza University, Rome.
 They need an enviroment controller for their clean room10000 so I used an Arduino to handle back-end [EnviromentController](https://github.com/Thecave3/EnviromentControllerArduino) here the values detected by sensors and then this script to handle the front-end.
 
-## Is a ready-to-implement code?
-No,you should shape to what you want to do by yourself.
+## What is to implement for now
 
-I finally decided to rewrite the whole software in java to offer a better GUI and proper multithreading interaction.
+Multithreading segmentation
 
 ## How to use it:
 
