@@ -35,7 +35,7 @@ while 1:
         logger.write(data)
         data = data.strip("\n").strip("\r")
         data = data.split(';')
-        print( "Pressione ambientale: "+ data[0]+"Umidità %: "+ data[1]+" Temperatura °C: "+ data[2] +" Pressione interna: "+data[3]+ "Tempo: "+data[4])
+        print( "Pressione ambientale: "+ data[0]+"\nUmidità %: "+ data[1]+"\nTemperatura °C: "+ data[2] +"\nPressione interna: "+data[3]+ "\nTempo: "+data[4])
         y = data[3]
         x = data[4]
         plt.scatter(x, y)
@@ -47,6 +47,11 @@ while 1:
         logger.close()
         ser.close()
         sys.exit()
+
+    except IndexError:
+        logger.flush()
+        print("Errore di lettura arduino, misurazione non valida")
+        pass
 
 #this will be never reached (hopefully)
 print ("Contact IMMEDIATELY thecave003  @ www.andrealacava.com")

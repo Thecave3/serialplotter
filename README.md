@@ -18,9 +18,6 @@ Hack’n’play for your personal use.
 
 
 ## Dependencies
-- JAVA version:
-  This program will NOT compile if you don't have at least:
-    - JAVA SE 7
 
 - PYTHON version:
   This program will NOT work if you don't have serial and plt modules.
