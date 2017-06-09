@@ -3,8 +3,9 @@
 
 import sys #ctrl-c handling and clear handling
 import serial
-import matplotlib.pyplot as plt #
+import matplotlib.pyplot as plt #plotter
 import os
+import threading
 
 print( "Provo ad aprire porta Arduino...")
 #apre la porta seriale ad un baudrate 9600
