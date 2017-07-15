@@ -63,7 +63,12 @@ while 1:
 
     except IndexError:
         logger.flush()
-        print("Errore di lettura arduino, misurazione non valida")
+        print("Errore di lettura arduino, valore saltato, misurazione non valida")
+        pass
+
+    except serial.serialutil.SerialException:
+        logger.flush()
+        print("Errore di lettura errore di lettura socket, ripeto operazione")
         pass
 
 #this will be never reached (hopefully)
